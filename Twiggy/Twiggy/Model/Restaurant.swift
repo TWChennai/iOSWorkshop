@@ -1,4 +1,3 @@
-import Foundation
 
 struct Restaurant {
     let name: String

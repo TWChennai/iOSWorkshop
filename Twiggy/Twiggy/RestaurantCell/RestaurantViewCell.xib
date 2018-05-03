@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14092" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14081.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,10 +43,10 @@
                 <constraints>
                     <constraint firstItem="aXh-vW-ZnM" firstAttribute="leading" secondItem="dJl-Zg-XHk" secondAttribute="trailing" constant="10" id="0SI-TS-msG"/>
                     <constraint firstItem="aXh-vW-ZnM" firstAttribute="top" secondItem="K8N-tP-H0x" secondAttribute="bottom" constant="10" id="CJg-HJ-CyH"/>
-                    <constraint firstAttribute="bottom" secondItem="dJl-Zg-XHk" secondAttribute="bottom" constant="27" id="ahS-kB-gZc"/>
-                    <constraint firstItem="dJl-Zg-XHk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26.5" id="gdq-fM-EEe"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dJl-Zg-XHk" secondAttribute="bottom" constant="15" id="izQ-x0-dBb"/>
                     <constraint firstItem="K8N-tP-H0x" firstAttribute="leading" secondItem="dJl-Zg-XHk" secondAttribute="trailing" constant="10" id="nVU-rC-xnj"/>
                     <constraint firstItem="dJl-Zg-XHk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="pqv-CY-4dd"/>
+                    <constraint firstItem="dJl-Zg-XHk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="uYR-Pg-8nw"/>
                     <constraint firstItem="K8N-tP-H0x" firstAttribute="top" secondItem="dJl-Zg-XHk" secondAttribute="top" id="w7k-hh-IF2"/>
                 </constraints>
             </tableViewCellContentView>
