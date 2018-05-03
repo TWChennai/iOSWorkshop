@@ -4,11 +4,15 @@ class RestaurantListViewModel {
     
     var restaurantList: [Restaurant] = []
     
+    init() {
+        mockRestaurantList()
+    }
+    
     func getRestaurantAtIndex(_ index: Int) -> Restaurant {
         return restaurantList[index]
     }
     
-    func mockRestaurantList() {
+    private func mockRestaurantList() {
         restaurantList.append(Restaurant(name: "Dominos", cuisine: "Fast food", image: "dominos"))
         restaurantList.append(Restaurant(name: "Mcdonalds", cuisine: "Fast food", image: "mcdonalds"))
         restaurantList.append(Restaurant(name: "Paradise", cuisine: "Biryani", image: "paradise"))

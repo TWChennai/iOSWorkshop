@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC642226209B2CD9003A95DC /* RestaurantMenuItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC642225209B2CD9003A95DC /* RestaurantMenuItemsViewController.swift */; };
+		AC642228209B2E72003A95DC /* RestaurantMenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC642227209B2E72003A95DC /* RestaurantMenuItemTableViewCell.swift */; };
+		AC64222A209B2F2D003A95DC /* RestaurantMenuItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC642229209B2F2D003A95DC /* RestaurantMenuItemsViewModel.swift */; };
+		AC64222C209B2FAB003A95DC /* RestaurantMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64222B209B2FAB003A95DC /* RestaurantMenuItem.swift */; };
 		C83458EA209AEC46009F841D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83458E9209AEC46009F841D /* AppDelegate.swift */; };
 		C83458EC209AEC46009F841D /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83458EB209AEC46009F841D /* RestaurantListViewController.swift */; };
 		C83458EF209AEC46009F841D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83458ED209AEC46009F841D /* Main.storyboard */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC642225209B2CD9003A95DC /* RestaurantMenuItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuItemsViewController.swift; sourceTree = "<group>"; };
+		AC642227209B2E72003A95DC /* RestaurantMenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		AC642229209B2F2D003A95DC /* RestaurantMenuItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuItemsViewModel.swift; sourceTree = "<group>"; };
+		AC64222B209B2FAB003A95DC /* RestaurantMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuItem.swift; sourceTree = "<group>"; };
 		C83458E6209AEC46009F841D /* Twiggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twiggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83458E9209AEC46009F841D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C83458EB209AEC46009F841D /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC642224209B2CB3003A95DC /* RestaurantMenu */ = {
+			isa = PBXGroup;
+			children = (
+				AC642225209B2CD9003A95DC /* RestaurantMenuItemsViewController.swift */,
+				AC642227209B2E72003A95DC /* RestaurantMenuItemTableViewCell.swift */,
+				AC642229209B2F2D003A95DC /* RestaurantMenuItemsViewModel.swift */,
+			);
+			path = RestaurantMenu;
+			sourceTree = "<group>";
+		};
 		C83458DD209AEC46009F841D = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +85,7 @@
 				C8610C01209AF2B800FC506C /* RestaurantCell */,
 				C8610BFC209AF02200FC506C /* Model */,
 				C83458FB209AEDBA009F841D /* Restaurant */,
+				AC642224209B2CB3003A95DC /* RestaurantMenu */,
 				C83458E9209AEC46009F841D /* AppDelegate.swift */,
 				C83458ED209AEC46009F841D /* Main.storyboard */,
 				C83458F0209AEC47009F841D /* Assets.xcassets */,
@@ -90,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				C8610BFD209AF03800FC506C /* Restaurant.swift */,
+				AC64222B209B2FAB003A95DC /* RestaurantMenuItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,9 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC642226209B2CD9003A95DC /* RestaurantMenuItemsViewController.swift in Sources */,
+				AC64222C209B2FAB003A95DC /* RestaurantMenuItem.swift in Sources */,
 				C8610C04209AF2E500FC506C /* RestaurantViewCell.swift in Sources */,
+				AC64222A209B2F2D003A95DC /* RestaurantMenuItemsViewModel.swift in Sources */,
 				C83458EC209AEC46009F841D /* RestaurantListViewController.swift in Sources */,
 				C8610C00209AF0A000FC506C /* RestaurantListViewModel.swift in Sources */,
+				AC642228209B2E72003A95DC /* RestaurantMenuItemTableViewCell.swift in Sources */,
 				C83458EA209AEC46009F841D /* AppDelegate.swift in Sources */,
 				C8610BFE209AF03800FC506C /* Restaurant.swift in Sources */,
 			);
