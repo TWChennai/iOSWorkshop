@@ -3,20 +3,8 @@ import Foundation
 class RestaurantCommunicator {
 
     class func getRestaurants(completion:@escaping ([Restaurant], _ error: Error?) -> Void) {
-        
-        let headers = [
-            "Cache-Control": "no-cache",
-            "Postman-Token": "7794bb6a-63d5-b583-6cd9-106c6e5f3bce"
-        ]
-        
-        let request = NSMutableURLRequest(url: NSURL(string: "https://api.mlab.com/api/1/databases/twiggy/collections/restaurants?apiKey=lFqcDbkLHMlgtWev1Q05iLMbwVYdWcm5")! as URL,
-                                          cachePolicy: .useProtocolCachePolicy,
-                                          timeoutInterval: 10.0)
-        request.httpMethod = "GET"
-        request.allHTTPHeaderFields = headers
-        
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+        let session = URLSession(configuration: .default)
+        let dataTask = session.dataTask(with: NSURL(string: "https://api.mlab.com/api/1/databases/twiggy/collections/restaurants?apiKey=lFqcDbkLHMlgtWev1Q05iLMbwVYdWcm5")! as URL) { (data, response, error) in
             if let error = error {
                 print(error.localizedDescription)
                 completion([], error)
@@ -35,7 +23,7 @@ class RestaurantCommunicator {
             } else {
                 completion([], error)
             }
-        })
+        }
         
         dataTask.resume()
     }
