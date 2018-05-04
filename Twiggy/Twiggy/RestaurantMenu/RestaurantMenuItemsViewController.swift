@@ -2,7 +2,8 @@ import UIKit
 
 class RestaurantMenuItemsViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var cartStatus: UILabel!
     
     private let restaurantMenuItemCellIdentifier = "RestaurantMenuItemCellIdentifier"
     private let menuCellHeight: CGFloat = 80.0
@@ -20,6 +21,10 @@ class RestaurantMenuItemsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func submitCart() {
+        
     }
 }
 
@@ -45,7 +50,6 @@ extension RestaurantMenuItemsViewController: UITableViewDelegate {
 }
 
 extension RestaurantMenuItemsViewController: RestaurantMenuItemTableViewCellDelegate {
-    
     func addToCart() {
         print("Added To Cart")
     }

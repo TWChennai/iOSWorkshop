@@ -10,9 +10,10 @@ import UIKit
 
 class RestaurantMenuItemTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var price: UILabel!
+    @IBOutlet private weak var picture: UIImageView!
+    @IBOutlet private weak var button: UIButton!
+    @IBOutlet private weak var name: UILabel!
+    @IBOutlet private weak var price: UILabel!
     
     private(set) var menuItem: RestaurantMenuItem?
     
@@ -29,12 +30,14 @@ class RestaurantMenuItemTableViewCell: UITableViewCell {
     }
     
     @IBAction func buttonPressed(sender: UIButton) {
+        sender.isSelected = !sender.isSelected
         delegate?.addToCart()
     }
     
     func updateMenuItem(_ menuItem: RestaurantMenuItem) {
         name.text = menuItem.name
-        price.text = "\(menuItem.price.description) INR"
+        price.text = "\(menuItem.price.description) Rs"
+        button.isSelected = false //TODO:: fetch state from DB and set state
     }
 }
 
