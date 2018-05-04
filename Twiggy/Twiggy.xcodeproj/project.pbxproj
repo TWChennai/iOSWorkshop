@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1EE320209C3B820034C1CA /* RSConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1EE31F209C3B820034C1CA /* RSConnection.swift */; };
 		AC642226209B2CD9003A95DC /* RestaurantMenuItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC642225209B2CD9003A95DC /* RestaurantMenuItemsViewController.swift */; };
 		AC642228209B2E72003A95DC /* RestaurantMenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC642227209B2E72003A95DC /* RestaurantMenuItemTableViewCell.swift */; };
 		AC64222A209B2F2D003A95DC /* RestaurantMenuItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC642229209B2F2D003A95DC /* RestaurantMenuItemsViewModel.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC1EE31F209C3B820034C1CA /* RSConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSConnection.swift; sourceTree = "<group>"; };
 		AC642225209B2CD9003A95DC /* RestaurantMenuItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuItemsViewController.swift; sourceTree = "<group>"; };
 		AC642227209B2E72003A95DC /* RestaurantMenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		AC642229209B2F2D003A95DC /* RestaurantMenuItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuItemsViewModel.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC1EE31E209C3B6E0034C1CA /* connection */ = {
+			isa = PBXGroup;
+			children = (
+				AC1EE31F209C3B820034C1CA /* RSConnection.swift */,
+			);
+			path = connection;
+			sourceTree = "<group>";
+		};
 		AC642224209B2CB3003A95DC /* RestaurantMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 		C83458E8209AEC46009F841D /* Twiggy */ = {
 			isa = PBXGroup;
 			children = (
+				AC1EE31E209C3B6E0034C1CA /* connection */,
 				C8610C01209AF2B800FC506C /* RestaurantCell */,
 				C8610BFC209AF02200FC506C /* Model */,
 				C83458FB209AEDBA009F841D /* Restaurant */,
@@ -197,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1EE320209C3B820034C1CA /* RSConnection.swift in Sources */,
 				AC642226209B2CD9003A95DC /* RestaurantMenuItemsViewController.swift in Sources */,
 				AC64222C209B2FAB003A95DC /* RestaurantMenuItem.swift in Sources */,
 				C8610C04209AF2E500FC506C /* RestaurantViewCell.swift in Sources */,
