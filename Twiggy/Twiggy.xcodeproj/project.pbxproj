@@ -22,6 +22,8 @@
 		C8610C04209AF2E500FC506C /* RestaurantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8610C02209AF2E500FC506C /* RestaurantViewCell.swift */; };
 		C8610C05209AF2E500FC506C /* RestaurantViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8610C03209AF2E500FC506C /* RestaurantViewCell.xib */; };
 		C8610C09209AF8D300FC506C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8610C07209AF8D300FC506C /* Localizable.strings */; };
+		E6AAB038209C3F1A000CE28E /* Data+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AAB037209C3F1A000CE28E /* Data+Json.swift */; };
+		E6C24EDA209C3C31003AA1AB /* RestaurantCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C24ED9209C3C31003AA1AB /* RestaurantCommunicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		C8610C02209AF2E500FC506C /* RestaurantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewCell.swift; sourceTree = "<group>"; };
 		C8610C03209AF2E500FC506C /* RestaurantViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantViewCell.xib; sourceTree = "<group>"; };
 		C8610C08209AF8D300FC506C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E6AAB037209C3F1A000CE28E /* Data+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Json.swift"; sourceTree = "<group>"; };
+		E6C24ED9209C3C31003AA1AB /* RestaurantCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCommunicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		C83458E8209AEC46009F841D /* Twiggy */ = {
 			isa = PBXGroup;
 			children = (
+				E6AAB036209C3F07000CE28E /* Utilities */,
 				AC1EE31E209C3B6E0034C1CA /* connection */,
 				C8610C01209AF2B800FC506C /* RestaurantCell */,
 				C8610BFC209AF02200FC506C /* Model */,
@@ -112,6 +117,7 @@
 			children = (
 				C83458EB209AEC46009F841D /* RestaurantListViewController.swift */,
 				C8610BFF209AF0A000FC506C /* RestaurantListViewModel.swift */,
+				E6C24ED9209C3C31003AA1AB /* RestaurantCommunicator.swift */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -132,6 +138,14 @@
 				C8610C03209AF2E500FC506C /* RestaurantViewCell.xib */,
 			);
 			path = RestaurantCell;
+			sourceTree = "<group>";
+		};
+		E6AAB036209C3F07000CE28E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E6AAB037209C3F1A000CE28E /* Data+Json.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +225,7 @@
 				AC1EE320209C3B820034C1CA /* RSConnection.swift in Sources */,
 				AC642226209B2CD9003A95DC /* RestaurantMenuItemsViewController.swift in Sources */,
 				AC64222C209B2FAB003A95DC /* RestaurantMenuItem.swift in Sources */,
+				E6C24EDA209C3C31003AA1AB /* RestaurantCommunicator.swift in Sources */,
 				C8610C04209AF2E500FC506C /* RestaurantViewCell.swift in Sources */,
 				AC64222A209B2F2D003A95DC /* RestaurantMenuItemsViewModel.swift in Sources */,
 				C83458EC209AEC46009F841D /* RestaurantListViewController.swift in Sources */,
@@ -218,6 +233,7 @@
 				AC642228209B2E72003A95DC /* RestaurantMenuItemTableViewCell.swift in Sources */,
 				C83458EA209AEC46009F841D /* AppDelegate.swift in Sources */,
 				C8610BFE209AF03800FC506C /* Restaurant.swift in Sources */,
+				E6AAB038209C3F1A000CE28E /* Data+Json.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Twiggy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Test.Twiggy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -384,6 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Twiggy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Test.Twiggy;
 				PRODUCT_NAME = "$(TARGET_NAME)";

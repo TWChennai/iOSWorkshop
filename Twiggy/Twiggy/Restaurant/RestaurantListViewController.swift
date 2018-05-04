@@ -14,6 +14,11 @@ class RestaurantListViewController: UIViewController {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.title = NSLocalizedString("RestaurantListTitle", comment: "RestaurantListTitle")
         configureTableView()
+        viewModel.fetchRestaurants {
+            DispatchQueue.main.async {
+                self.restaurantTableView.reloadData()
+            }
+        }
     }
     
     func configureTableView() {
