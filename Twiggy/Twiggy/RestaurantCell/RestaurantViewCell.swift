@@ -6,14 +6,19 @@ class RestaurantViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var cuisineLabel: UILabel!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     func config(restaurant: Restaurant) {
-        thumbnailImage.image = UIImage(named: restaurant.image)
+        
+        let url = URL(string:restaurant.image)
+        if let data = try? Data(contentsOf: url!){
+            self.thumbnailImage.image = UIImage(data: data)
+        }
+        
         nameLabel.text = restaurant.name
         cuisineLabel.text = restaurant.cuisine
     }
-    
 }
